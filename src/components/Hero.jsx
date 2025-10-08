@@ -5,7 +5,7 @@ import { SiMongodb } from 'react-icons/si'
 export default function HeroSection() {
     return (
         <section
-            id="hero"
+            id="Hero"
             className="relative flex min-h-screen flex-col justify-between bg-gradient-to-r from-violet-800 via-indigo-900 to-black text-center text-white"
         >
             <div className="flex flex-grow flex-col items-center justify-center">
@@ -18,7 +18,7 @@ export default function HeroSection() {
                 </p>
                 <div className="mt-8">
                     <a
-                        href="#projects"
+                        href="#Projects"
                         className="inline-block transform rounded-full bg-gray-900 px-8 py-3 text-lg font-bold text-white transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
                     >
                         View My Work

@@ -46,14 +46,14 @@ export default function Project() {
     }, [])
     if (isLoading) {
         return (
-            <section id="projects">
+            <section id="Projects">
                 <div className="text-center">Loading Projects...</div>
             </section>
         )
     }
     return (
         //  main container
-        <section id="projects" className="bg-grey-100 py-20">
+        <section id="Projects" className="bg-grey-100 py-20">
             {/* this container sets the max width */}
             <div className="mx-auto w-11/12 max-w-6xl">
                 <h2 className="text-4xl font-bold text-gray-800">

@@ -20,7 +20,7 @@ function NavBar() {
             className={`${navbarClasses} fixed top-0 z-50 w-full transition-all duration-300 ease-in-out`}
         >
             <nav className="mx-auto flex w-11/12 max-w-6xl items-center justify-between pt-4 pb-4">
-                <a href="/" className="text-xl font-bold md:text-2xl">
+                <a href="#Hero" className="text-xl font-bold md:text-2xl">
                     MrBlue's Portfolio
                 </a>
                 <ul className="items-center gap-8 sm:flex sm:flex-col md:flex md:flex-row">

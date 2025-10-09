@@ -27,7 +27,7 @@ function NavBar() {
                     <li>
                         <a
                             href="/DashBoard"
-                            className={`font-medium ${isScrolled ? 'hover:text-blue-600' : 'hover:text-gray-300'}`}
+                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             Dashboard
                         </a>
@@ -35,7 +35,7 @@ function NavBar() {
                     <li>
                         <a
                             href="#Projects"
-                            className={`ont-medium ${isScrolled ? 'hover:text-blue-600' : 'hover:text-gray-300'}`}
+                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             Projects
                         </a>
@@ -43,7 +43,7 @@ function NavBar() {
                     <li>
                         <a
                             href="#About"
-                            className={`font-medium ${isScrolled ? 'hover:text-blue-600' : 'hover:text-gray-300'}`}
+                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             About
                         </a>
@@ -51,7 +51,7 @@ function NavBar() {
                     <li>
                         <a
                             href="#Contact"
-                            className={`font-medium ${isScrolled ? 'hover:text-blue-600' : 'hover:text-gray-300'}`}
+                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             Contact
                         </a>

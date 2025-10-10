@@ -16,11 +16,14 @@ export default function Contact() {
         e.preventDefault()
         setStatus('Sending...')
         try {
-            const responce = await fetch('http://localhost:5000/api/messages', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            })
+            const responce = await fetch(
+                'https://swapnanil-portfolio-api.onrender.com/api/messages',
+                {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData),
+                }
+            )
             if (responce.ok) {
                 setStatus('Message Sent Successfully')
             } else setStatus('Error sending the Message')

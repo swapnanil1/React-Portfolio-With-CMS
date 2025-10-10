@@ -22,7 +22,9 @@ function AdminDashboard() {
     const fetchProjects = async () => {
         try {
             setIsLoading(true)
-            const response = await fetch('http://localhost:5000/api/projects')
+            const response = await fetch(
+                'https://swapnanil-portfolio-api.onrender.com/api/projects'
+            )
             if (!response.ok) throw new Error('Failed to fetch projects')
             const data = await response.json()
             setProjects(data)
@@ -63,14 +65,17 @@ function AdminDashboard() {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/api/projects', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'x-auth-token': token, // send token
-                },
-                body: JSON.stringify(projectData),
-            })
+            const response = await fetch(
+                'https://swapnanil-portfolio-api.onrender.com/api/projects',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-auth-token': token, // send token
+                    },
+                    body: JSON.stringify(projectData),
+                }
+            )
 
             if (!response.ok) {
                 const errorData = await response.json()
@@ -104,7 +109,7 @@ function AdminDashboard() {
         const token = localStorage.getItem('token')
         try {
             const response = await fetch(
-                `http://localhost:5000/api/projects/${projectId}`,
+                `https://swapnanil-portfolio-api.onrender.com/api/projects/${projectId}`,
                 {
                     method: 'DELETE',
                     headers: {
@@ -129,7 +134,7 @@ function AdminDashboard() {
 
     const handleLogout = () => {
         localStorage.removeItem('token')
-        navigate('/login')
+        navigate('/')
     }
 
     return (

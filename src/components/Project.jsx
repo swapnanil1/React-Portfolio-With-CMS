@@ -31,7 +31,7 @@ export default function Project() {
         const fetchProjects = async () => {
             try {
                 const responce = await fetch(
-                    'http://localhost:5000/api/projects'
+                    'https://swapnanil-portfolio-api.onrender.com/api/projects'
                 )
                 if (!responce.ok) throw new Error('project fetch failed')
                 const data = await responce.json()

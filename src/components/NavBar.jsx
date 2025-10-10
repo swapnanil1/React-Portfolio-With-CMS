@@ -20,14 +20,15 @@ function NavBar() {
             className={`${navbarClasses} fixed top-0 z-50 w-full transition-all duration-300 ease-in-out`}
         >
             <nav className="mx-auto flex w-11/12 max-w-6xl items-center justify-between pt-4 pb-4">
-                <a href="#Hero" className="text-xl font-bold md:text-2xl">
+                <a href="#Hero" className="text-[1.8rem] font-bold md:text-2xl">
                     MrBlue's Portfolio
                 </a>
-                <ul className="items-center gap-8 sm:flex sm:flex-col md:flex md:flex-row">
+                <ul className="ml-6 flex flex-wrap items-center justify-center gap-4 md:flex md:flex-row md:gap-8">
+                    {' '}
                     <li>
                         <a
                             href="/DashBoard"
-                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
+                            className={`sm: text-xl font-medium md:text-base ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             Dashboard
                         </a>
@@ -35,7 +36,7 @@ function NavBar() {
                     <li>
                         <a
                             href="#Projects"
-                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
+                            className={`sm: text-xl font-medium md:text-base ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             Projects
                         </a>
@@ -43,7 +44,7 @@ function NavBar() {
                     <li>
                         <a
                             href="#About"
-                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
+                            className={`sm: text-xl font-medium md:text-base ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             About
                         </a>
@@ -51,7 +52,7 @@ function NavBar() {
                     <li>
                         <a
                             href="#Contact"
-                            className={`font-medium ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
+                            className={`sm: text-xl font-medium md:text-base ${isScrolled ? 'hover:text-violet-600' : 'hover:text-gray-300'}`}
                         >
                             Contact
                         </a>

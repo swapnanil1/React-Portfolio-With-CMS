@@ -37,17 +37,17 @@ function LoginPage() {
     }
 
     return (
-        <div className="flex min-h-screen items-center justify-center bg-gray-100">
-            <div className="w-full max-w-md space-y-6 rounded-lg bg-white p-8 shadow-md">
-                <h1 className="text-center text-3xl font-bold text-gray-800">
-                    Admin Login
+        <div className="flex min-h-screen items-center justify-center bg-gray-900">
+            <div className="w-full max-w-md space-y-6 rounded-lg bg-gray-800 p-8 shadow-lg">
+                <h1 className="text-center text-3xl font-bold text-white">
+                    Dashboard Login
                 </h1>
 
                 <form onSubmit={handleLogin} className="space-y-6">
                     <div>
                         <label
                             htmlFor="username"
-                            className="block text-sm font-bold text-gray-600"
+                            className="block text-sm font-bold text-gray-200"
                         >
                             Username
                         </label>
@@ -57,13 +57,13 @@ function LoginPage() {
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             required
-                            className="mt-1 w-full rounded-md border bg-gray-50 p-3 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                            className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 p-3 text-white focus:ring-2 focus:ring-purple-500 focus:outline-none"
                         />
                     </div>
                     <div>
                         <label
                             htmlFor="password"
-                            className="block text-sm font-bold text-gray-600"
+                            className="block text-sm font-bold text-gray-200"
                         >
                             Password
                         </label>
@@ -73,13 +73,13 @@ function LoginPage() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
-                            className="mt-1 w-full rounded-md border bg-gray-50 p-3 text-gray-800 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                            className="mt-1 w-full rounded-md border border-gray-600 bg-gray-700 p-3 text-white focus:ring-2 focus:ring-purple-500 focus:outline-none"
                         />
                     </div>
 
                     {/* show error */}
                     {error && (
-                        <p className="text-center text-sm text-red-500">
+                        <p className="text-center text-sm text-red-400">
                             {error}
                         </p>
                     )}
@@ -87,7 +87,7 @@ function LoginPage() {
                     <div>
                         <button
                             type="submit"
-                            className="w-full rounded-md bg-blue-600 py-3 font-bold text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
+                            className="w-full rounded-md bg-purple-600 py-3 font-bold text-white hover:bg-purple-700 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:outline-none"
                         >
                             Log In
                         </button>

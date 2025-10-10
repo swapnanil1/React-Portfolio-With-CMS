@@ -7,7 +7,7 @@ export default function Project() {
             description:
                 'A social platform for developers to share ideas, code, and collaborate on projects.',
             image: '/images/res1.png',
-            hoverImage: '/images/res2.png',
+            hoverImg: '/images/res2.png',
             tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
             liveLink: 'https://example2.app',
             repoLink: 'https://github.com/xyz/abc',
@@ -17,7 +17,7 @@ export default function Project() {
             description:
                 'A productivity app for managing tasks, deadlines, and team collaboration in real-time.',
             image: '/images/todo1.png',
-            hoverImage: '/images/todo2.png',
+            hoverImg: '/images/todo2.png',
             tags: ['Next.js', 'TailwindCSS', 'Firebase', 'PWA'],
             liveLink: 'https://example2.io',
             repoLink: 'https://github.com/xyz/abc',
@@ -76,8 +76,8 @@ export default function Project() {
                             <div className="h-56 overflow-hidden">
                                 <img
                                     src={
-                                        hoveredStatus == index
-                                            ? project.hoverImage
+                                        hoveredStatus === index
+                                            ? project.hoverImg
                                             : project.image
                                     }
                                     alt={project.title}

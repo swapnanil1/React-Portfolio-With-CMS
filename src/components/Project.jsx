@@ -112,7 +112,7 @@ export default function Project() {
                                         View Live
                                     </a>
                                     <a
-                                        href={project.liveLink}
+                                        href={project.repoLink}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="font-semibold text-gray-600 hover:underline"

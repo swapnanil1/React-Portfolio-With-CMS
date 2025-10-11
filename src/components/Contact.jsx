@@ -76,23 +76,23 @@ export default function Contact() {
                             id="email"
                             type="email"
                             name="email"
-                            value={formData.name}
+                            value={formData.email}
                             onChange={handleChange}
                             className="w-full rounded-lg border px-4 py-2 focus:ring-2 focus:ring-violet-500 focus:outline-none"
                         />
                     </div>
                     <div className="mb-6">
                         <label
-                            htmlFor="textbox"
+                            htmlFor="message"
                             className="mb-2 block font-bold text-gray-700"
                         >
                             Message
                         </label>
                         <textarea
-                            id="textbox"
+                            id="message"
                             type="textarea"
-                            name="textarea"
-                            value={formData.name}
+                            name="message"
+                            value={formData.message}
                             onChange={handleChange}
                             cols={50}
                             rows={10}

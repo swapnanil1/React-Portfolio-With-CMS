@@ -51,17 +51,20 @@ export default function Project() {
 				<div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 					{projects.map((project, index) => (
 						// each project's first div, sets the entire hover status
-						<div
+						<article
 							key={project._id}
-							role="group"
 							className="transform overflow-hidden rounded-lg bg-white shadow-lg transition-transform duration-300 hover:-translate-y-2 focus:-translate-y-2"
-							onMouseEnter={() => setHoveredStatus(index)}
-							onMouseLeave={() => setHoveredStatus(null)}
-							onFocus={() => setHoveredStatus(index)}
-							onBlur={() => setHoveredStatus(null)}
 						>
-							{/* each project has a image area  */}
-							<div className="h-56 overflow-hidden">
+							<button
+								type="button"
+								className="block h-56 w-full overflow-hidden"
+								onMouseEnter={() => setHoveredStatus(index)}
+								onMouseLeave={() => setHoveredStatus(null)}
+								onFocus={() => setHoveredStatus(index)}
+								onBlur={() => setHoveredStatus(null)}
+							>
+								{/* each project has a image area  */}
+
 								<img
 									src={
 										hoveredStatus === index ? project.hoverImg : project.image
@@ -69,7 +72,8 @@ export default function Project() {
 									alt={project.title}
 									className={`${hoveredStatus === index ? "scale-110" : "scale-100"} h-full w-full transform object-cover transition-transform duration-500 ease-in-out`}
 								/>
-							</div>
+							</button>
+
 							{/* and a details area  */}
 							<div className="p-6">
 								<div className="mb-4 flex flex-wrap gap-2">
@@ -105,7 +109,7 @@ export default function Project() {
 									</a>
 								</div>
 							</div>
-						</div>
+						</article>
 					))}
 				</div>
 			</div>

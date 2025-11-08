@@ -13,15 +13,22 @@ export default function HeroSection() {
 					Hi, I'm Swapnanil
 				</h1>
 				<p className="mt-4 text-lg md:text-xl">
-					I am a passionate Full-Stack Developer creating modern and responsive
-					web applications that users love.
+					A Full-Stack Developer crafting fast, scalable, and user-focused web
+					applications.
 				</p>
-				<div className="mt-8">
+				<div className="mt-8 flex flex-wrap justify-center gap-5">
 					<a
 						href="#Projects"
-						className="inline-block transform rounded-full bg-gray-900 px-8 py-3 text-lg font-bold text-white transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gray-800"
+						className="inline-block rounded-full bg-violet-600 px-8 py-3 text-lg font-semibold text-white shadow-sm transition-all duration-300 hover:bg-violet-700 hover:shadow-md"
 					>
-						View My Work
+						Explore Projects
+					</a>
+					<a
+						href="https://drive.usercontent.google.com/uc?id=12KwZkULzaEjOPzKu9EWoTKDSuQfDUBLA&export=download"
+						download
+						className="inline-block rounded-full border border-purple-400 px-8 py-3 text-lg font-semibold text-purple-300 transition-all duration-300 hover:border-purple-500 hover:text-purple-100"
+					>
+						Get My Resume
 					</a>
 				</div>
 			</div>

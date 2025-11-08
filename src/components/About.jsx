@@ -34,11 +34,13 @@ export default function About() {
 							Who am i ?
 						</h3>
 						<p className="mb-6 leading-relaxed text-gray-700">
-							Hello! I'm Swapnanil Chakraborty, a developer with a passion for
-							building clean, efficient, and user-friendly web applications. My
-							journey into tech started with a curiosity for how things work,
-							and it has evolved into a career where I get to solve problems and
-							build amazing things for the web.
+							Greetings! I'm <strong>Swapnanil Chakraborty</strong>, a
+							Full-Stack Developer who enjoys building user-friendly, efficient
+							web applications. My entry into tech was through a fascination
+							with how stuff works - it's from that curiosity that I became
+							passionate about coding to provide simple solutions to complex
+							problems. Now my focus is on building contemporary, scalable,
+							responsive web experiences that matters.
 						</p>
 						<h3 className="mb-4 text-2xl font-semibold text-gray-800">
 							My Skills
